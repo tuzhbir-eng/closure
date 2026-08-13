@@ -7,17 +7,15 @@
 // У ДЕБАГЕРІ відстежити змінні, які перебувають у Замиканні (Closure).
 
 function counter(start = 0, step = 1) {
-	debugger;
 	let i = start;
 
 	return function () {
-		const current = i;
+		// const current = i;
 		i += step;
-		return current;
-		console.log(current);
+		return i;
 	};
 }
-const counter1 = counter(2, 4);
+const counter1 = counter(1, 5);
 console.log("counter1:>> ", counter1());
 console.log("counter1:>> ", counter1());
 console.log("counter1:>> ", counter1());
