@@ -10,7 +10,6 @@ function counter(start = 0, step = 1) {
 	let i = start;
 
 	return function () {
-		// const current = i;
 		i += step;
 		return i;
 	};
